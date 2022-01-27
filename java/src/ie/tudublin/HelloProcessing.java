@@ -2,11 +2,9 @@ package ie.tudublin;
 
 import processing.core.PApplet;
 
-public class HelloProcessing extends PApplet
-{
+public class HelloProcessing extends PApplet {
 
-	public void settings()
-	{
+	public void settings() {
 		size(500, 500);
 	}
 
@@ -27,15 +25,14 @@ public class HelloProcessing extends PApplet
 		y2dir = random(-range, range);
 
 		smooth();
-		
+
 	}
 
 	float x1, y1, x2, y2;
 	float x1dir, x2dir, y1dir, y2dir;
 	float c = 0;
-	
-	public void draw()
-	{	
+
+	public void draw() {
 		strokeWeight(2);
 		stroke(c, 255, 255);
 		c = (c + 1f) % 255;
@@ -45,23 +42,19 @@ public class HelloProcessing extends PApplet
 		x2 += x2dir;
 		y1 += y1dir;
 		y2 += y2dir;
-		
-		if (x1 < 0 || x1 > width)
-		{
-			x1dir = - x1dir;
+
+		if (x1 < 0 || x1 > width) {
+			x1dir = -x1dir;
 		}
-		if (y1 < 0 || y1 > height)
-		{
-			y1dir = - y1dir;
+		if (y1 < 0 || y1 > height) {
+			y1dir = -y1dir;
 		}
 
-		if (x2 < 0 || x2 > width)
-		{
-			x2dir = - x2dir;
+		if (x2 < 0 || x2 > width) {
+			x2dir = -x2dir;
 		}
-		if (y2 < 0 || y2 > height)
-		{
-			y2dir = - y2dir;
+		if (y2 < 0 || y2 > height) {
+			y2dir = -y2dir;
 		}
 	}
 }
