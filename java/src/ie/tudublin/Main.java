@@ -6,9 +6,23 @@ public class Main {
         processing.core.PApplet.runSketch(a, new HelloProcessing());
     }
 
+    <<<<<<<HEAD
+
     public static void bugZap() {
         String[] a = { "MAIN" };
         processing.core.PApplet.runSketch(a, new BugZap());
+=======
+
+    public static void starMap() {
+        String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new StarMap());
+    }
+
+    public static void bugZap()
+	{
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new BugZap());
+>>>>>>> abc424ce02eee2a397500d9d3ece2974332eb505
     }
 
     public static void loops() {
@@ -63,7 +77,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        audio2();
+        starMap();
 
         // Tara Misty
         // Tara Tara
