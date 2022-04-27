@@ -77,7 +77,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        YASC();
+        life();
 
         // Tara Misty
         // Tara Tara
