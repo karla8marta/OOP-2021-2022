@@ -6,23 +6,13 @@ public class Main {
         processing.core.PApplet.runSketch(a, new HelloProcessing());
     }
 
-    <<<<<<<HEAD
-
     public static void bugZap() {
         String[] a = { "MAIN" };
         processing.core.PApplet.runSketch(a, new BugZap());
-=======
 
     public static void starMap() {
         String[] a = { "MAIN" };
         processing.core.PApplet.runSketch(a, new StarMap());
-    }
-
-    public static void bugZap()
-	{
-		String[] a = {"MAIN"};
-        processing.core.PApplet.runSketch( a, new BugZap());
->>>>>>> abc424ce02eee2a397500d9d3ece2974332eb505
     }
 
     public static void loops() {
@@ -40,6 +30,11 @@ public class Main {
         processing.core.PApplet.runSketch(a, new Life());
     }
 
+    public static void timing() {
+        String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new TimingExample());
+    }
+
     public static void audio1() {
         String[] a = { "MAIN" };
         processing.core.PApplet.runSketch(a, new Audio1());
@@ -53,6 +48,11 @@ public class Main {
     public static void colorfulLife() {
         String[] a = { "MAIN" };
         processing.core.PApplet.runSketch(a, new ColorfulLife());
+    }
+
+    public static void YASC() {
+        String[] a = { "MAIN" };
+        processing.core.PApplet.runSketch(a, new YASC());
     }
 
     public void cat() {
@@ -77,7 +77,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        starMap();
+        YASC();
 
         // Tara Misty
         // Tara Tara
